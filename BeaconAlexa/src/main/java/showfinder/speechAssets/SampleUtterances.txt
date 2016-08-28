@@ -1,0 +1,65 @@
+FinishIntent no
+FinishIntent nope
+FinishIntent no thanks
+FinishIntent no thank you
+FinishIntent exit
+FinishIntent stop
+FinishIntent quit
+FinishIntent good bye
+FinishIntent bye
+FinishIntent thank you
+
+HelpIntent help
+HelpIntent help me
+HelpIntent what can I ask you
+HelpIntent get help
+HelpIntent to help
+HelpIntent to help me
+HelpIntent what commands can I ask
+HelpIntent what commands can I say
+HelpIntent what can I do
+HelpIntent what can I use this for
+HelpIntent what questions can I ask
+HelpIntent what can you do
+HelpIntent what do you do
+HelpIntent how do I use you
+HelpIntent how can I use you
+HelpIntent what can you tell me
+
+GetCategoryIntent give me the categories
+GetCategoryIntent today's deals
+GetCategoryIntent today's categories
+GetCategoryIntent tell me the categories
+GetCategoryIntent anything new
+GetCategoryIntent any new categories
+GetCategoryIntent list categories
+GetCategoryIntent what are today's categories
+GetCategoryIntent any categories today
+GetCategoryIntent categories please
+
+GetDealsIntent give {category} category deals
+GetDealsIntent what are the {category} deals
+GetDealsIntent tell me {category} deals
+GetDealsIntent {category} deals
+GetDealsIntent deals for {category}
+GetDealsIntent {category} please
+GetDealsIntent deals on {category}
+GetDealsIntent i want {category}
+GetDealsIntent {category}
+GetDealsIntent more about {category}
+
+GetDetailsIntent tell me about {index} deal
+GetDetailsIntent what is the {index} deal
+GetDetailsIntent i'm curious about the {index} deal
+GetDetailsIntent what's the {index} deal
+GetDetailsIntent {index} deal
+GetDetailsIntent deal {index}
+GetDetailsIntent how about deal {index}
+GetDetailsIntent {index} please
+GetDetailsIntent number {index}
+GetDetailsIntent {index}
+
+AMAZON.StartOverIntent start over
+AMAZON.StartOverIntent restart
+AMAZON.StartOverIntent start again
+AMAZON.StartOverIntent go back to the beginning

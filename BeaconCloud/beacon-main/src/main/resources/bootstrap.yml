@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: cloud-beacon
+  cloud:
+    config:
+      enabled: false
+      failFast: true
+      uri: http://config.qatools.tm.tmcs:8080
+      username: tmdev
+      password: dev
+
+---
+
+spring:
+  profiles: ijash1,ijphx1,jash1,jphx1,tash1,toolsash1,tphx1,ash1,ash2,phx1,phx2
+  cloud:
+    config:
+      enabled: false
+      uri: http://config.tm.tmcs:8080

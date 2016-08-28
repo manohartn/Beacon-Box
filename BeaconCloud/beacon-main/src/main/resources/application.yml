@@ -1,0 +1,61 @@
+spring:
+  profiles:
+    active: default
+
+tm:
+  service:
+    descriptor:
+      name: beacon
+      description: Service for the apple app to push beacons
+      distroList: pramodsetlur@gmail.com
+      onCallGroup: PLEN
+      serviceTier: OPTIONAL
+      documentationLink: https://contegixapp1.livenation.com/confluence
+      contractLink: https://contegixapp1.livenation.com/confluence
+      runbookLink: https://contegixapp1.livenation.com/confluence
+      dashboardLinks:
+        splunk: http://search2.splunk.coresys.tmcs/
+        metrilyx: http://metrics.techops.info
+      tags:
+        - cloud
+        - service
+
+server:
+  port: 8080
+#  port: 8443
+#  ssl:
+#    key-store:
+#    key-store-password:
+#    key-password:
+
+management:
+  port: 8888
+  address: 127.0.0.1
+  context_path: /manage
+
+endpoints:
+  jmx:
+    domain: hackathon.slashhack.beacon
+    uniqueNames: true
+  enabled: false
+  info:
+    enabled: true
+  env:
+    enabled: true
+  mappings:
+    enabled: true
+
+logging:
+  level:
+    com:
+      ticketmaster: DEBUG
+
+---
+
+spring:
+  profiles: ijash1,ijphx1,jash1,jphx1,tash1,toolsash1,tphx1,ash1,ash2,phx1,phx2
+
+logging:
+  level:
+    com:
+      ticketmaster: INFO

@@ -1,0 +1,7 @@
+showfinder/BeaconDao.class
+showfinder/EventsEntity.class
+showfinder/BeaconDynamoDbClient.class
+showfinder/ShowFinderSpeechlet.class
+showfinder/BeaconUserDataItem.class
+showfinder/BeaconValue.class
+showfinder/ShowFinderSpeechletRequestStreamHandler.class

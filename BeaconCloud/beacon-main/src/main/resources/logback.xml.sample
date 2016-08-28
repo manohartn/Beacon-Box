@@ -1,0 +1,39 @@
+<configuration>
+  <!-- Only including this if you want to use CONSOLE & File output.  Probably not in TM envrionment. -->
+  <!--
+  <include resource="org/springframework/boot/logging/logback/base.xml"/>
+  -->
+  <logger name="org.springframework.web" level="INFO"/>
+  <logger name="com.ticketmaster.tictactoe" leve="INFO"/>
+  <logger name="com.ticketmaster.tictactoe.controller" leve="DEBUG"/>
+  <logger name="com.ticketmaster.tictactoe.controller.GameEngine" leve="DEBUG"/>
+
+  <appender name="SYSLOG" class="com.ticketmaster.platform.logging.appender.logback.LocalLogbackSyslogAppender">
+    <layout class="ch.qos.logback.classic.PatternLayout">
+      <pattern>%d %5p %t [%c] - %m%n</pattern>
+    </layout>
+
+    <appName>cloud-beacon</appName>
+    <facility>LOCAL5</facility>
+  </appender>
+
+  <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder>
+      <pattern>%d %5p %t [%c] - %m%n</pattern>
+    </encoder>
+  </appender>
+
+  <root level="info">
+    <!-- Only using this on your local environment.  This could cause problem in our Linux environment. -->
+    <!--
+    <appender-ref ref="STDOUT"/>
+    -->
+
+    <!-- Only Enabling this in Linux environment -->
+    <!--
+    <appender-ref ref="SYSLOG"/>
+    -->
+  </root>
+
+  <
+</configuration>
