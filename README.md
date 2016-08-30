@@ -45,7 +45,8 @@ Instructions to run:
 ➜  target git:(master) ✗ scp -i ~/.aws/npcomplete.pem beacon-main-1.0-SNAPSHOT.jar ubuntu@<IP>: 
 ```
 On Amazon EC2
-``` $  ✗ java -jar beacon-main-1.0-SNAPSHOT.jar
+``` 
+$  ✗ java -jar beacon-main-1.0-SNAPSHOT.jar
 ```
 
 ####Start the iOS Application - BeaconCollector-iOS
